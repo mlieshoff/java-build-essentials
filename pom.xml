@@ -258,6 +258,11 @@
             <id>packagecloud</id>
             <url>packagecloud+https://packagecloud.io/mlieshoff/java-build-essentials</url>
         </repository>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/mlieshoff/java-build-essentials</url>
+        </repository>
     </distributionManagement>
     <repositories>
         <repository>
