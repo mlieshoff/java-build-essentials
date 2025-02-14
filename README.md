@@ -1,6 +1,6 @@
 [![](https://img.shields.io/badge/java-packagecloud.io-844fec.svg)](https://packagecloud.io/)
 
-# java-build-essentials 1.0.0
+# java-build-essentials 1.0.1
 Essentials for Java building
 
 ### Usage
@@ -103,7 +103,7 @@ Essentials for Java building
 
 to Gradle:
 ```groovy
-    implementation group: 'com.mlieshoff', name: 'java-build-essentials', version: '1.0.0'
+    implementation group: 'com.mlieshoff', name: 'java-build-essentials', version: '1.0.1'
 ```
 
 to Maven:
@@ -111,7 +111,7 @@ to Maven:
     <dependency>
         <groupId>com.mlieshoff</groupId>
         <artifactId>java-build-essentials</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </dependency>
 ```
 
