@@ -13,5 +13,7 @@ jobs:
           java-version: 21
       - name: Publish package to GitHub Packages
         run: mvn -B -P github-packages deploy
+        with:
+          fetch-depth: 0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
