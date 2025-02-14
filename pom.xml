@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>java-build-essentials</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <groupId>com.mlieshoff</groupId>
     <url>https://maven.apache.org</url>
     <inceptionYear>2025</inceptionYear>
@@ -253,12 +253,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <distributionManagement>
-        <repository>
-            <id>packagecloud</id>
-            <url>packagecloud+https://packagecloud.io/mlieshoff/java-build-essentials</url>
-        </repository>
-    </distributionManagement>
     <repositories>
         <repository>
             <id>mlieshoff-java-build-essentials</id>
@@ -271,4 +265,25 @@
             </snapshots>
         </repository>
     </repositories>
+    <profiles>
+        <profile>
+            <id>packagecloud</id>
+            <distributionManagement>
+                <repository>
+                    <id>packagecloud</id>
+                    <url>packagecloud+https://packagecloud.io/mlieshoff/java-build-essentials</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+        <profile>
+            <id>github-packages</id>
+            <distributionManagement>
+                <repository>
+                    <id>github</id>
+                    <name>GitHub Packages</name>
+                    <url>https://maven.pkg.github.com/mlieshoff/java-build-essentials</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+    </profiles>
 </project>
